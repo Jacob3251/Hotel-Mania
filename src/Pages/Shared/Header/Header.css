@@ -1,6 +1,21 @@
 .nav-contain {
   display: flex;
 }
+.mobile-menu {
+  display: none;
+}
+.mobile-menu-design {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.collapsed-bg {
+  background-color: rgba(73, 73, 243, 0.984);
+}
+.mobile-border {
+  border: 0 solid green;
+}
+
 .nav-list {
   width: 20%;
 }
@@ -21,19 +36,22 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .mobile-menu {
+    display: block;
+  }
   .nav-contain {
-    display: flex;
+    display: none;
     justify-content: center;
   }
-  .nav-list {
+  /* .nav-list {
     width: 70%;
   }
   .nav-login {
     width: 30%;
     display: flex;
     padding-left: 50px;
-    flex-direction: row;
-  }
+    flex-direction: row; */
+  /* } */
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .nav-contain {

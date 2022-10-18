@@ -1,0 +1,48 @@
+.text-box {
+  /* border: 1px solid lightgrey; */
+  width: 100%;
+
+  /* background-color: blue; */
+}
+.text-box h3 {
+  font-size: 36px;
+  color: rgb(159, 148, 148);
+  font-family: "Fuzzy Bubbles", cursive;
+}
+.text-box p {
+  font-size: 16px;
+  color: rgb(159, 148, 148);
+}
+.invertbox {
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 1200px) {
+  .full-box {
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  .small-box {
+    display: flex;
+    padding: 0px 0px;
+    margin: auto auto;
+    width: 80%;
+
+    flex-direction: column;
+
+    margin: 0;
+  }
+
+  .img-box {
+    width: 100%;
+  }
+  .img-box img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .text-box {
+    border: 1px solid lightgrey;
+    width: 100%;
+  }
+}
