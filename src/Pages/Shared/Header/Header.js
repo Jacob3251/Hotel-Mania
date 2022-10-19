@@ -15,7 +15,7 @@ const Header = () => {
         <nav className="navbar navbar-primary bg-primary">
           <div className="mobile-menu-design">
             <Container className="">
-              <Link className="nav-link nav-titles ms-3" to="/header">
+              <Link className="nav-link nav-titles ms-3" to="/">
                 <img width={40} src={logo} />
               </Link>
             </Container>
@@ -62,7 +62,7 @@ const Header = () => {
       </div>
       <Navbar className="nav-contain" bg="primary" variant="dark">
         <Container className="nav-list">
-          <Link className="nav-link nav-titles ms-3" to="/header">
+          <Link className="nav-link nav-titles ms-3" to="/">
             <img width={40} src={logo} />
           </Link>
           <Link className="nav-link nav-titles" to="/">
