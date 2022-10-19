@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import logo from "../../../images/logo.png";
 import { FiMenu } from "react-icons/fi";
 import "./Header.css";
-
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase_init";
+import { signOut } from "firebase/auth";
 const Header = () => {
+  const [user] = useAuthState(auth);
   return (
     <div>
       <div className=" mobile-menu">
@@ -40,9 +43,20 @@ const Header = () => {
             <Link className="nav-link text-white py-2" to="/order">
               Order
             </Link>
-            <Link className="nav-link text-white py-2" to="/login">
-              Login
-            </Link>
+            {user ? (
+              <div
+                className="text-white py-2"
+                onClick={() => {
+                  signOut(auth);
+                }}
+              >
+                SignOut
+              </div>
+            ) : (
+              <Link className="nav-link text-white py-2" to="/login">
+                Login
+              </Link>
+            )}
           </Container>
         </div>
       </div>
@@ -62,9 +76,20 @@ const Header = () => {
           </Link>
         </Container>
         <Container className="nav-login">
-          <Link className="nav-link nav-titles" to="/login">
-            Login
-          </Link>
+          {user ? (
+            <div
+              className="text-white py-2 nav-titles"
+              onClick={() => {
+                signOut(auth);
+              }}
+            >
+              <span className="user-email">{user.email} </span> SignOut
+            </div>
+          ) : (
+            <Link className="nav-link nav-titles text-white py-2" to="/login">
+              Login
+            </Link>
+          )}
         </Container>
       </Navbar>
     </div>

@@ -30,9 +30,13 @@
   display: block;
   /* margin: auto 10px; */
   width: 20%;
+  cursor: pointer;
 }
 .nav-titles:hover {
   color: rgba(255, 255, 255, 0.768);
+}
+.user-email {
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 576px) {

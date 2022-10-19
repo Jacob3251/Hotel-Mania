@@ -1,0 +1,27 @@
+.selfull-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightblue;
+  height: 150px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.selfull-box img {
+  height: 80px;
+  background-color: red;
+}
+.delete-icon {
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.delbg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: salmon;
+  height: 60px;
+  width: 60px;
+}
