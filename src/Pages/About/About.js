@@ -1,13 +1,12 @@
 import React from "react";
 import propic from "../../images/propic.png";
+import "./About.css";
 const About = () => {
   return (
     <div className="container">
       <div>
-        <div>
+        <div className="container about-dev emptybox">
           <img src={propic} />
-        </div>
-        <div>
           <h3>Greetings from Md. Nayeem Hasan Adil</h3>
         </div>
       </div>

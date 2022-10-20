@@ -14,7 +14,7 @@ const SelectedRoom = ({ details }) => {
     }
   };
   return (
-    <div className="container selfull-box">
+    <div className=" selfull-box">
       <img src={img} alt="" />
       <div className="container ms-3">
         <h4>{name}</h4>

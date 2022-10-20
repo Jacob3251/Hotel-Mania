@@ -39,7 +39,7 @@
   font-weight: 600;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
   .mobile-menu {
     display: block;
   }
@@ -57,21 +57,7 @@
     flex-direction: row; */
   /* } */
 }
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  .nav-contain {
-    display: flex;
-    justify-content: center;
-  }
-  .nav-list {
-    width: 80%;
-  }
-  .nav-login {
-    width: 20%;
-    display: flex;
-    padding-left: 50px;
-    flex-direction: row;
-  }
-}
+
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .nav-contain {
     display: flex;

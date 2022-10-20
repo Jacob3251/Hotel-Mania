@@ -25,3 +25,35 @@
   height: 60px;
   width: 60px;
 }
+@media screen and (min-width: 100px) and (max-width: 474px) {
+  .selfull-box {
+    height: 350px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .selfull-box img {
+    width: 100%;
+    height: 40%;
+  }
+  .delete-icon {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+  }
+  .delbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    border-radius: 0px;
+    height: 60px;
+    width: 100%;
+  }
+}

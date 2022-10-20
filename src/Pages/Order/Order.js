@@ -48,7 +48,7 @@ const Order = () => {
       <h3 className="text-center my-5">
         {roomDetails.length == 0 ? "" : "Review Order"}
       </h3>
-      <div className="container">
+      <div className="container select-room">
         {roomDetails.map((details) => (
           <SelectedRoom key={details.id} details={details}></SelectedRoom>
         ))}
